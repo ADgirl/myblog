@@ -1,0 +1,60 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a,a:hover{
+			text-decoration: none;
+		}
+	a{
+		color: #349feb;
+		opacity: 1;
+	}
+	a:hover{
+		opacity: 0.7;
+	}
+	ul>li{
+		list-style: none;
+	}
+
+/*页面公共样式*/
+body{
+			background-image: url('../images/theme.jpg');
+			height: 100%;
+			width: 100%;
+			background-size: 100%;
+		}
+		.header{
+			padding: 10px 15px;
+			height: 100px; 
+			text-align: center;
+			line-height: 100px;
+			font-size: 20px
+		}
+		.header ul{
+			display: inline-block;
+			text-align: center;
+		}
+		.header li{
+			float: left;
+			display: inline-block;
+			width: 100px;
+		}
+		.container{
+			width: 100%;
+			height: auto;
+		}
+		.footer{
+			height: 50px;
+			text-align: center;
+			vertical-align: middle; 
+			position: absolute;
+			bottom: 0;
+			line-height: 50px;
+			width: 100%;
+			color: #fff;
+		}
+		.footer p{
+			text-align: center;
+			font-size: 14px;
+			vertical-align: middle;
+		}
