@@ -6,21 +6,67 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <style type="text/css">
 	.footer{
+		position: relative;
+		margin-top: 50px;
 		color: #000;
+	}
+	ul>li{
+		list-style: none;
+	}
+	.container{
+		width: 100%;
+		height: auto;
+	}
+	.middle-content{
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		background-color: #ddd;
+		opacity:0.7;
+		border:1px solid #ccc;
+		padding: 45px;
+	}
+	.middle-content li{
+		border-bottom: 1px solid #ccc;
+	}
+	.icon-thumbs-up{
+		color: #349feb;
+	}
+	.list{
+	    color: #555;
+	    font-size: 16px;
+	    margin: 5px;
+	    font-family: sans-serif;
+	}
+	.list h4{
+		margin:10px 0;
+	}
+	.list p{
+		margin:10px 0;
+    	text-indent: 2;
+    	font-size: 14px;
+	}
+	.list span{
+    	font-family: cursive;
+	}
+	.list a{
+		display: inline-block;
+    	width: 61px;
 	}
 </style>
 <body>
-	<div>
+	<div style="width:100%;height:100%;">
 		<div class="header">
 			<ul>
 				<li>
 					<a href="index.html">主页</a>
 				</li>
 				<li>
-					<a href="#">技术分享</a>
+					<a href="folders.html">技术分享</a>
 				</li>
 				<li>
 					<a href="#">留言板</a>
@@ -35,7 +81,78 @@
 			</ul>
 		</div>
 		<div class="container">
-			
+			<div class="left-content">
+			每月文章详情（采用树形插件）
+			</div>
+			<div class="middle-content">
+				<ul>
+					<li>
+						<div class="list">
+							<h4>css动画属性</h4>
+							<p>
+							<span>过渡只有在应用与其关联的样式时才会生效。示例样式中使用了:hover 选择器，这意味着只有用户将鼠标悬停在span元素上才会应用样式。用户一旦将鼠标从span元素上已开，只剩下#banana样式，默认情况下，元素的外观会立刻回到初始状态。会立刻回到初始状态</span>
+							<a href="#">&nbsp;更多&gt;&gt;</a>
+							</p>
+							<p>
+								<span>2017-03-03&nbsp;15:12&nbsp;</span>
+								<span>
+									<i class="icon-eye2">&nbsp;查看&nbsp;</i><span>15</span>
+								</span>
+								<span>
+									<i class="icon-thumbs-up">&nbsp;赞&nbsp;</i><span>200</span>
+								</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="list">
+							<h4>css动画属性</h4>
+							<p>
+							<span>过渡只有在应用与其关联的样式时才会生效。示例样式中使用了:hover 选择器，这意味着只有用户将鼠标悬停在span元素上才会应用样式。用户一旦将鼠标从span元素上已开，只剩下#banana样式，默认情况下，元素的外观会立刻回到初始状态。会立刻回到初始状态</span>
+							<a href="#">&nbsp;更多&gt;&gt;</a>
+							</p>
+							<p>
+								<span>2017-03-03&nbsp;15:12&nbsp;</span>
+								<span>
+									<i class="icon-eye2">&nbsp;查看&nbsp;</i><span>15</span>
+								</span>
+								<span>
+									<i class="icon-thumbs-up">&nbsp;赞&nbsp;</i><span>200</span>
+								</span>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="list">
+							<h4>css动画属性</h4>
+							<p>
+							<span>过渡只有在应用与其关联的样式时才会生效。示例样式中使用了:hover 选择器，这意味着只有用户将鼠标悬停在span元素上才会应用样式。用户一旦将鼠标从span元素上已开，只剩下#banana样式，默认情况下，元素的外观会立刻回到初始状态。会立刻回到初始状态</span>
+							<a href="#">&nbsp;更多&gt;&gt;</a>
+							</p>
+							<p>
+								<span>2017-03-03&nbsp;15:12&nbsp;</span>
+								<span>
+									<i class="icon-eye2">&nbsp;查看&nbsp;</i><span>15</span>
+								</span>
+								<span>
+									<i class="icon-thumbs-up">&nbsp;赞&nbsp;</i><span>200</span>
+								</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<div class="pagination">
+
+				</div>
+			</div>
+			<div class="right-content">
+			当前页的所有文章索引
+				<ul>
+					<li><a href="textinfo.html">css动画属性1</a></li>
+					<li><a href="textinfo.html">css动画属性2</a></li>
+					<li><a href="textinfo.html">css动画属性3</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="footer">
 			<p>@copyright2017&nbsp;by&nbsp;<a href="#">ADgirl</a><span> • Powered By </span><a href="http://typecho.org">Typecho</a></p>
@@ -44,7 +161,7 @@
 	</div>
 
 <script type="text/javascript" src="../js/lib/angular.min.js"></script>
-<script type="text/javascript" color="52,159,235" opacity='0.7' zIndex="-2" count="300" src="../js/lib/canvas-nest.js"></script>
+<script type="text/javascript" color="52,159,235" opacity='0.5' zIndex="-2" count="100" src="../js/lib/canvas-nest.js"></script>
 <script type="text/javascript" src="../js/lib/jquery-3.2.1.min.js"></script>
 </body>
 </html>

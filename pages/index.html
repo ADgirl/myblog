@@ -29,11 +29,19 @@
 			border-radius: 50%;
 			border: 1px solid #ddd;
 			margin-bottom: 20px;
+			transition-delay: 100ms;
+			transition-duration: 2s;
 		}
 		.img img{
 			width: 100%;
 			height: 100%;
-
+			transition-delay: 100ms;
+			transition-duration: 2s;
+		}
+		.img:hover,.img img:hover{
+			width: 200px;
+			height: 200px;
+			transition-duration: 2s;
 		}
 
 	</style>
@@ -46,7 +54,7 @@
 				<a href="index.html">主页</a>
 			</li>
 			<li>
-				<a href="#">技术分享</a>
+				<a href="folders.html">技术分享</a>
 			</li>
 			<li>
 				<a href="#">留言板</a>
@@ -63,7 +71,7 @@
 	<div class="container">
 		<div class="circle" id="logo">
 			<div class="img">
-				<img src="../icon/girl.png">
+				<img src="../icon/png/girl.png">
 			</div>
 			<p id="info">前端2逼小文青</p>
 		</div>
